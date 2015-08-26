@@ -1,0 +1,16 @@
+{
+  "name": "nottsjs.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nottsjs/nottsjs.github.io",
+  "authors": [
+    "Joe McKie <joe@joemck.ie>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

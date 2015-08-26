@@ -1,0 +1,100 @@
+/**
+ * Initialises the base grid
+ */
+@mixin grid {
+	.b-container { 
+		@include container;
+	}
+
+	.b-row {
+		@include row;
+	}
+
+	.b-column {
+		@include column;
+	}
+
+	@for $i from 1 through $columns {
+		.b-column--#{$i} {
+			@include column($i);
+		}
+	}
+}
+
+/**
+ * Customises an element to look like a row
+ */
+@mixin row($offset: true) {
+	@at-root {
+		.flexbox & {
+			@include display-flex;
+			@include flex(0 1 auto);
+			@include flex-direction(row);
+			@include flex-wrap(wrap);
+		}
+	}
+
+	@include clearfix;
+
+	margin-top: 0;
+	margin-right: - gutter-width();
+	margin-bottom: rhythm(0.5);
+	margin-left: - gutter-width();
+}
+
+/**
+ * Customises an element to look like a gridded column
+ * @param  {integer} $column-width - the amount of pixels the element should take up
+ * @param  {integer} $include-defaults - determine whether to output floats and padding
+ */
+@mixin column($column-width: false, $include-defaults: true) {
+	@if ($column-width and unitless($column-width)) {
+		$column-width: percentage($column-width / $columns);
+	}
+
+	min-height: 1px;
+	position: relative;
+
+	@if $include-defaults {
+		float: left;
+		padding-left: gutter-width();
+		padding-right: gutter-width();
+	}
+
+	@if $column-width {
+		width: $column-width;
+
+		@at-root {
+			.flexbox & {
+				@include flex(0 0 auto);
+				@include flex-basis($column-width);
+				max-width: $column-width;
+			}
+		}
+	}
+}
+
+/**
+ * Styles an element as a container
+ */
+@mixin container {
+	margin: 0 auto;
+	max-width: $container-width;
+	padding: 0 $container-padding;
+	position: relative;
+	width: 100%;
+}
+
+/**
+ * Offsets the padding applied to the container
+ */
+@mixin offset-container-padding {
+	margin-left: - $container-padding;
+	margin-right: - $container-padding;
+	padding-left: $container-padding;
+	padding-right: $container-padding;
+}
+
+@function gutter-width() {
+	@return ($grid-gutter-width / 2);
+}

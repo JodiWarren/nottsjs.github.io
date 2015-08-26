@@ -1,0 +1,27 @@
+//-- Branding
+$black: #000;
+$dark-gray: lighten($black, 20%);
+$white: #fff;
+$yellow: #f8da4d;
+
+$background-color: $yellow;
+$body-color: $dark-gray;
+
+//-- Media queries
+$smartphone-portrait   :  320px !default;
+$smartphone-landscape  :  480px !default;
+$iphone6-portrait      :  375px !default;
+$iphone6-landscape     :  667px !default;
+$iphone6plus-portrait  :  414px !default;
+$iphone6plus-landscape :  736px !default;
+$ipad-portrait         :  768px !default;
+$ipad-landscape        : 1024px !default;
+$desktop-small         : 1024px !default;
+$desktop-regular       : 1224px !default;
+$desktop-large         : 1824px !default;
+
+//-- Grid
+$columns: 12;
+$grid-gutter-width: 22px;
+$container-padding: $grid-gutter-width / 2;
+$container-width: $desktop-small;

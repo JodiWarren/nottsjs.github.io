@@ -1,0 +1,27 @@
+{
+  "name": "nottsjs.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nottsjs/nottsjs.github.io.git"
+  },
+  "author": "Joe McKie <joe@joemck.ie> (http://joemck.ie/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nottsjs/nottsjs.github.io/issues"
+  },
+  "homepage": "https://github.com/nottsjs/nottsjs.github.io#readme"
+}
