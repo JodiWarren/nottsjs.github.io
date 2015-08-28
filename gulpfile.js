@@ -17,7 +17,8 @@ gulp.task('sass', function () {
 	  .pipe(livereload())
 })
 
-gulp.task('sass:watch', function () {
+gulp.task('watch', function () {
 	livereload.listen()
 	gulp.watch('./src/sass/**/*.scss', ['sass'])
+	gulp.watch('*.html', livereload.reload)
 })
