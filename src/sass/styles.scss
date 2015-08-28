@@ -3,4 +3,18 @@
 body {
 	background-color: $background-color;
 	color: $body-color;
+	font-family: $font-family-sans-serif;
+	line-height: rhythm(1);
 }
+
+#{headings()} { font-family: $font-family-headers; }
+h1 { @include adjust-font-size-to($font-size-h1); }
+h2 { @include adjust-font-size-to($font-size-h2); }
+h3 { @include adjust-font-size-to($font-size-h3); }
+h4 { @include adjust-font-size-to($font-size-h4); }
+h5 { @include adjust-font-size-to($font-size-h5); }
+h6 { @include adjust-font-size-to($font-size-h6); }
+
+img { vertical-align: middle; }
+
+@import 'blocks/**/*';

@@ -15,9 +15,11 @@
 /**
  * Offsets the padding applied to the container
  */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700";
 .b-container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 768px;
   padding: 0 11px;
   position: relative;
   width: 100%;
@@ -242,7 +244,153 @@
   max-width: 100%;
 }
 
+html {
+  font-size: 87.5%;
+  line-height: 1.5em;
+}
+
 body {
   background-color: #f8da4d;
   color: #333333;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-size: 2.85714rem;
+  line-height: 53px;
+  line-height: 3.75rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: 2.14286rem;
+  line-height: 42px;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 1.71429rem;
+  line-height: 32px;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 20px;
+  font-size: 1.42857rem;
+  line-height: 32px;
+  line-height: 2.25rem;
+}
+
+h5 {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.b-event {
+  background-color: #fff;
+  border: 1px solid #eccf49;
+  border-bottom-width: 2px;
+  -moz-border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 1.5rem;
+}
+.b-event--card__title {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+.b-event__meta {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 0.75rem;
+}
+.b-event__info {
+  padding-top: 3px;
+}
+.b-event__avatar {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.b-event__title {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.b-event__location {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+}
+.b-event__time {
+  font-size: 12px;
+}
+
+.b-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eccf49;
+  margin-bottom: 1.5rem;
+  padding: 10px;
+}
+.b-header__navigation-list {
+  float: right;
+  display: inline-block;
+}
+.b-header__navigation-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.b-logo {
+  color: #333333;
+  display: inline-block;
+  float: left;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.b-navigation {
+  overflow: hidden;
+  *zoom: 1;
+}
+.b-navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
+.b-section {
+  margin-bottom: 3rem;
 }

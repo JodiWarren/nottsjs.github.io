@@ -1,0 +1,28 @@
+.b-event {
+	background-color: $white;
+	border: 1px solid $border-color-base;
+	border-bottom-width: 2px;
+	@include border-radius($border-radius-large $border-radius-large 0 0);
+	@include clearfix;
+	padding: rhythm(1);
+
+	&--card {
+		&__title {
+			@include adjust-font-size-to($font-size-h6);
+			font-weight: 700;
+			margin-bottom: rhythm(0.5);
+			text-transform: uppercase;
+		}
+	}
+	&__meta { @include clearfix; margin-bottom: rhythm(0.5); }
+	&__info { padding-top: 3px; }
+	&__avatar {
+		@include border-radius(50%);
+		float: left;
+		margin-right: 10px;
+		overflow: hidden;
+	}
+	&__title { @include adjust-font-size-to($font-size-h5); font-weight: 700; }
+	&__location { @include adjust-font-size-to($font-size-h5); }
+	&__time { font-size: 12px; }
+}

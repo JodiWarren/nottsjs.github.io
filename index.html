@@ -1,12 +1,53 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" href="public/vendor/normalize.css/normalize.css" type="text/css" />
+		<link rel="stylesheet" href="public/vendor/normalize-css/normalize.css" type="text/css" />
+		<link rel="stylesheet" href="public/vendor/reset-css/reset.css" type="text/css" />
 		<link rel="stylesheet" href="public/css/styles.css" type="text/css" />
 	</head>
 	<body>
+		<header class="b-header">
+			<nav class="b-container b-navigation">
+				<a class="b-logo" href="#">NottsJS</a>
+				<ul class="b-header__navigation-list b-navigation__list">
+					<li class="b-navigation__list-item b-header__navigation-item">Home</li>
+					<li class="b-navigation__list-item b-header__navigation-item">Events</li>
+					<li class="b-navigation__list-item b-header__navigation-item">Contact</li>
+					<li class="b-navigation__list-item b-header__navigation-item">
+						<i class="fa fa-twitter"></i>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<main class="b-container">
-			<h1>NottsJS</h1>
+			<section class="b-section">
+				<h1>NottsJS</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<section class="b-section">
+				<article class="b-event">
+					<h2 class="b-event--card__title">Next event:</h2>
+					<section class="b-event__meta">
+						<figure class="b-event__avatar">
+							<img src="https://s3.amazonaws.com/uifaces/faces/twitter/sauro/128.jpg" height="66" width="66" />
+						</figure>
+						<div class="b-event__info">
+							<h3 class="b-event__title">NodeSchool</h3>
+							<h3 class="b-event__location">September 2nd 2015</h3>
+							<time class="b-event__time" title="September 2nd 2015, 18:30 - 21:00">18:30 - 21:00</time>
+						</div>
+					</section>
+					<p class="b-event__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<footer class="b-event__footer">
+						<a href="#">Book ticket now</a>
+					</footer>
+				</article>
+			</section>
 		</main>
 	</body>
 </html>

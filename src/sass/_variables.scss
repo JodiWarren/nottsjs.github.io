@@ -5,7 +5,6 @@ $white: #fff;
 $yellow: #f8da4d;
 
 $background-color: $yellow;
-$body-color: $dark-gray;
 
 //-- Media queries
 $smartphone-portrait   :  320px !default;
@@ -24,4 +23,39 @@ $desktop-large         : 1824px !default;
 $columns: 12;
 $grid-gutter-width: 22px;
 $container-padding: $grid-gutter-width / 2;
-$container-width: $desktop-small;
+$container-width: $ipad-portrait;
+
+//-- Typography
+//---- Colours
+$body-color: $dark-gray;
+$link-color: #aaaaaa;
+
+//---- Fonts
+$font-family-serif: "Libre Baskerville", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$font-family-sans-serif: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$font-family-headers: "Source Sans Pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+$font-family-monospace: "Inconsolata", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+//---- Sizes
+$font-size-base: 14px;
+$font-size-small: $font-size-base / 1.25;
+$font-size-medium: $font-size-base * 1.5;
+$font-size-large: floor($font-size-base * 1.9);
+$font-size-h1: 40px;
+$font-size-h2: 30px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+
+//---- Line heights
+$line-height-small: $font-size-base;
+$line-height-base: $font-size-base * 1.5;
+$line-height-large: floor($font-size-base * 1.9);
+
+$brand-color: #49baf4;
+
+//-- Borders
+$border-color-base: mix(#000, $background-color, 5%);
+$border-radius-base: 4px;
+$border-radius-large: $border-radius-base * 2;

@@ -1,5 +1,14 @@
 @import 'compass';
 @import 'variables';
 @import 'mixins/grid';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700';
 
 @include grid;
+
+// Configure Compass' vertical rhythm
+$round-to-nearest-half-line: true;
+$rhythm-unit: 'rem';
+$base-font-size: $font-size-base;
+$base-line-height: $line-height-base;
+@include establish-baseline;

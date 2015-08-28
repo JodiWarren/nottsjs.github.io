@@ -1,0 +1,17 @@
+.b-header {
+	background-color: $white;
+	border-bottom: 1px solid $border-color-base;
+	margin-bottom: rhythm(1);
+	padding: 10px;
+
+	&__navigation {
+		&-list {
+			float: right;
+			display: inline-block	
+		}
+		&-item {
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+}

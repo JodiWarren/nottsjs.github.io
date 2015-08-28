@@ -1,3 +1,5 @@
+require 'sass-globbing'
+
 sass_dir     = 'src/sass'
 css_dir      = 'public/css'
 project_type = :stand_alone
